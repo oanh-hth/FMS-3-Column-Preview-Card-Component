@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --color-orange: hsl(31, 77%, 52%);
+    --color-cyan: hsl(184, 100%, 22%);
+    --color-dark-cyan: hsl(179, 100%, 13%);
+    --color-white: hsla(0, 0%, 100%, 0.75);
+    --color-grey: hsl(0, 0%, 95%);
+}
+
+/*=== BASE ===*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+p, h1 {
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--color-grey);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=== TYPOGRAPHY ===*/
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1.197;
+    color: var(--color-grey);
+    margin-bottom: 1.5625rem;
+}
+
+p {
+    margin-bottom: 1.5625rem;
+    line-height: 1.67;
+}
+
+/*=== LAYOUT ====*/
+main {
+    display: grid;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three';
+    border-radius: 8px;
+    width: min(100vw - 3rem, 57.5rem);
+    overflow: hidden;
+    margin-block: 5.5rem;
+}
+
+article {
+    padding: 3rem;
+}
+
+.sedans {
+    background-color: var(--color-orange);
+}
+
+.suvs {
+    background-color: var(--color-cyan);
+}
+
+.luxury {
+    background-color: var(--color-dark-cyan);
+}
+
+/*=== COMPONENTS ===*/
+a {
+    display: inline-block;
+    padding: 0.6875rem 2rem 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.67;
+    border-radius: 25px;
+    border: 2px solid currentColor;
+    background-color: var(--color-grey);
+    max-width: 12.5rem;
+}
+
+.sedans a {
+    color: var(--color-orange); 
+}
+
+.suvs a {
+    color: var(--color-cyan);
+}
+
+.luxury a {
+    color: var(--color-dark-cyan);
+}
+
+a:hover, a:focus {
+    outline: none;
+    background-color: inherit;
+    border-color: var(--color-grey);
+    color: var(--color-grey);
+}
+
+img {
+    margin-bottom: 2.1875rem;
+}
+
+@media (min-width: 850px) {
+    main {
+        grid-template-areas: 'one two three';
+    }
+
+    a {
+        margin-top: 3.625rem;
+    }
+}
+
