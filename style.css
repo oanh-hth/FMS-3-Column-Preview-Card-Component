@@ -44,7 +44,42 @@ h1 {
 
 p {
     margin-bottom: 1.5625rem;
-    line-height: 1.67;
+    line-height: 1.5625rem;
+}
+
+a {
+    font-size: inherit;
+    font-weight: 400;
+    display: block;
+    width: 9.125rem;
+    padding: 0.69rem 1.97rem 0.75rem;
+    text-decoration: none;
+    line-height: 1.5625rem;
+    outline: 2px solid currentColor;
+    border-radius: 25px;
+    background-color: var(--color-grey);
+}
+
+.sedans a {
+    color: var(--color-orange); 
+}
+
+.suvs a {
+    color: var(--color-cyan);
+}
+
+.luxury a {
+    color: var(--color-dark-cyan);
+}
+
+a:hover, a:focus {
+    background-color: inherit;
+    outline-color: var(--color-grey);
+    color: var(--color-grey);
+}
+
+img {
+    margin-bottom: 2.1875rem;
 }
 
 /*=== LAYOUT ====*/
@@ -79,41 +114,6 @@ article {
     grid-area: three;
 }
 
-a {
-    display: inline-block;
-    max-width: 12.5rem;
-    padding: 0.6875rem 2rem 0.75rem;
-    text-decoration: none;
-    text-align: center;
-    line-height: 1.67;
-    border-radius: 25px;
-    border: 2px solid currentColor;
-    background-color: var(--color-grey);
-}
-
-.sedans a {
-    color: var(--color-orange); 
-}
-
-.suvs a {
-    color: var(--color-cyan);
-}
-
-.luxury a {
-    color: var(--color-dark-cyan);
-}
-
-a:hover, a:focus {
-    outline: none;
-    background-color: inherit;
-    border-color: var(--color-grey);
-    color: var(--color-grey);
-}
-
-img {
-    margin-bottom: 2.1875rem;
-}
-
 @media (min-width: 850px) {
     body {
         padding-top: 2.63rem;
@@ -123,8 +123,8 @@ img {
         grid-template-areas: 'one two three';
     }
 
-    a {
-        margin-top: 3.625rem;
+    p {
+        margin-bottom: 5.19rem;
     }
 }
 
