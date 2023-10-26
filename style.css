@@ -55,7 +55,7 @@ a {
     padding: 0.69rem 1.97rem 0.75rem;
     text-decoration: none;
     line-height: 1.5625rem;
-    outline: 2px solid currentColor;
+    /* outline: 2px solid currentColor; */
     border-radius: 25px;
     background-color: var(--color-grey);
 }
@@ -74,7 +74,8 @@ a {
 
 a:hover, a:focus {
     background-color: inherit;
-    outline-color: var(--color-grey);
+    /* outline-color: var(--color-grey); */
+    outline: 2px solid var(--color-grey);
     color: var(--color-grey);
 }
 
