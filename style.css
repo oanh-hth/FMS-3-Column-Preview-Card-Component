@@ -48,7 +48,7 @@ p {
 }
 
 a {
-    font-size: inherit;
+    font-size: 0.9375rem;
     font-weight: 400;
     display: block;
     width: 9.125rem;
