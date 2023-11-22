@@ -20,7 +20,6 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.9375rem;
     font-weight: 400;
-    line-height: 1.5625rem;
     color: var(--color-white);
     background-color: var(--color-grey);
     min-height: 100vh;
@@ -41,6 +40,7 @@ h2 {
 
 p {
     margin-bottom: 1.56rem;
+    line-height: 1.5625rem;
 }
 
 a {
@@ -55,6 +55,7 @@ a {
     align-items: center;
     border-radius: 25px;
     background-color: var(--color-grey);
+    border: 2px solid transparent;
 }
 
 .sedans a {
@@ -71,8 +72,8 @@ a {
 
 a:hover, a:focus {
     background-color: inherit;
-    outline: 2px solid var(--color-grey);
     color: var(--color-grey);
+    border-color: var(--color-grey);
 }
 
 img {
