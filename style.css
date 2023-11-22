@@ -29,7 +29,7 @@ body {
 }
 
 h2 {
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Big Shoulders Display', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: normal;
@@ -53,7 +53,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
     background-color: var(--color-grey);
     border: 2px solid transparent;
 }
@@ -71,13 +71,14 @@ a {
 }
 
 a:hover, a:focus {
+    outline: none;
     background-color: inherit;
     color: var(--color-grey);
     border-color: var(--color-grey);
 }
 
 img {
-    margin-bottom: 2.1875rem;
+    margin-bottom: 1.94rem;
 }
 
 main {
