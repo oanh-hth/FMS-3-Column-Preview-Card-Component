@@ -113,7 +113,7 @@ article {
 @media (min-width: 850px) {
     main {
         grid-template-areas: 'one two three';
-        padding-top: 5.19rem;
+        margin-top: 10.69rem;
     }
 
     p {
