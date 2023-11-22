@@ -111,9 +111,12 @@ article {
 }
 
 @media (min-width: 850px) {
+    body {
+        padding-top: 2.63rem;
+    }
+
     main {
         grid-template-areas: 'one two three';
-        margin-top: 10.69rem;
     }
 
     p {
