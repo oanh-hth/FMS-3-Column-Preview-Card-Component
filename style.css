@@ -48,14 +48,13 @@ a {
     font-weight: 400;
     text-decoration: none;
     line-height: 1.5625rem;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 9.125rem;
     padding: 0.565rem 1.845rem 0.625rem;
     text-align: center;
     /* height: 3rem; */
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
     border-radius: 1.5625rem;
     background-color: var(--color-grey);
     border: 2px solid transparent;
